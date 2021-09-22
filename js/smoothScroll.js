@@ -1,7 +1,7 @@
 //console.log("smoothScroll");
-const linksHead = document.querySelectorAll(".meny-list__link");
+const linksHead = document.querySelectorAll(".menu-list__link");
 const mainScroll = document.querySelectorAll(".main__scroll");
-const newArray = [...linksHead, mainScroll];
+const newArray = [...linksHead, ...mainScroll];
 
 newArray.forEach((link) => {
   link.addEventListener("click", (event) => {
